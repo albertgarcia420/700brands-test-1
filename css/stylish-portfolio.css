@@ -527,3 +527,60 @@ h5.myriad-font.text-uppercase, h4.myriad-font.text-uppercase, h3.myriad-font.tex
     font-size: 80px;
     font-weight: 500;
 }
+
+@media(min-width: 700px){
+  .mobile-footer{
+      display:  none;
+  }
+  .laptop-header {
+    position: relative;
+    top: 10%;
+}
+img.logo-header {
+    display: none;
+}
+}
+@media(max-width: 600px){
+  .desktop-footer{
+    display: none;
+  }
+  .cta h2.mb-4 {
+    font-size: 58px!important;
+    font-weight: 500;
+    line-height: 1;
+}
+input.email-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+button.btn.btn-default {
+    width: 80%;
+}
+.callout h2 {
+    font-size: 50px;
+}
+.callout h3 {
+    font-size: 36px;
+}
+h2.transparent-text.mobile {
+    top: 18%;
+}
+.mobile-header {
+    position: relative;
+    top: 10%;
+}
+.mobile-track-section {
+    width: auto;
+}
+img.logo-header {
+    display: none;
+}
+}
+@media(max-width: 400px){
+  .mobile-header img{
+    display: none;
+  }
+  img.logo-header{
+    display: block;
+  }
+}

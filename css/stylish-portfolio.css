@@ -3,6 +3,19 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
+ @font-face {
+    font-family: 'Moonshiner Sharp';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Moonshiner Sharp'), url('../css/fonts/moonshiner-cufonfonts-webfont/Moonshiner-Sharp.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed'), url('../css/fonts/myriad-pro-cufonfonts-webfont/MYRIADPRO-COND.woff') format('woff');
+    }
 
 body,
 html {
@@ -11,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Moonshiner Round';
+  font-family: 'Myriad Pro Condensed';
 }
 
 .btn-xl {
@@ -40,6 +53,7 @@ h5,
 h6 {
     font-weight: 700;
     letter-spacing: 0.2em;
+    font-family: 'Moonshiner Sharp';
 }
 
 .text-faded {
@@ -223,10 +237,10 @@ h6 {
 }
 
 .callout h2 {
-  font-size: 3.5rem;
+  font-size: 80px;
   font-weight: 700;
   display: block;
-  max-width: 30rem;
+  /*max-width: 30rem;*/
 }
 
 .portfolio-item {
@@ -308,6 +322,7 @@ h6 {
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  border-top: 40px solid #fff;
 }
 
 footer.footer .social-link {
@@ -464,34 +479,51 @@ span.track-item-length {
     border-bottom: 2px solid #f4f4f4;
 }
 h2.transparent-text {
-    font-size: 70px;
-    color: #e2300061;
+    font-size: 110px;
+    color: rgb(226 48 0 / 0.2);
     position: relative;
-    top: 11%;
+    top: 14%;
 }
 h2.transparent-text-1 {
-    font-size: 70px;
-    color: #e2300061;
+    font-size: 110px;
+    color: rgb(226 48 0 / 0.2);
     position: relative;
-    top: 80px;
+    top: 100px;
 }
 button.btn.btn-default {
     background: #fff;
+    font-size: 22px;
+    font-weight: 500;
 }
 input.email-field {
-    width: 55%;
+    width: 60%;
     text-align: center;
     padding: 7px 0px;
     border-radius: 5px;
     background-color: rgb(255 255 255 / 0.4);
+    font-size: 22px;
 }
 ::placeholder {
     color: #000;
 }
 
-section#about{
-  background: url(../img/header-banner-2.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+h2.header-section {
+    font-size: 60px;
+}
+h5.myriad-font.text-uppercase, h4.myriad-font.text-uppercase, h3.myriad-font.text-uppercase {
+    font-family: 'Myriad Pro Condensed';
+}
+.callout h3 {
+    font-weight: 400;
+    font-size: 40px;
+}
+.callout p {
+    font-size: 20px;
+}
+.cta h2 i {
+    font-size: 60px;
+}
+.cta h2.mb-4 {
+    font-size: 80px;
+    font-weight: 500;
 }

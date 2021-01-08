@@ -529,6 +529,9 @@ h5.myriad-font.text-uppercase, h4.myriad-font.text-uppercase, h3.myriad-font.tex
     font-size: 80px;
     font-weight: 500;
 }
+.mobile-header{
+  display: none;
+}
 /*responsive*/
 @media(max-width: 1440px){
 .bg-artist {
@@ -583,7 +586,7 @@ img.logo-header {
   }
 
   .bg-artist {
-    left: 0%!important;
+    left: -33%!important;
     width: 800px!important;
     bottom: 8%!important;
 }
@@ -599,7 +602,10 @@ img.logo-header {
 }
 
   .desktop-footer{
-    display: none;
+    display: none!important;
+  }
+  .mobile-footer{
+    display: block!important;
   }
   .cta h2.mb-4 {
     font-size: 58px!important;
@@ -633,7 +639,7 @@ img.logo-header {
     display: none;
 }
 }
-@media(max-width: 425px) {
+@media only(max-width: 425px) {
  .header-logo {
     top: calc(65% - 2rem)!important;
     left: calc(40% - 2rem)!important;
@@ -645,8 +651,8 @@ img.logo-header {
     left: calc(50% - 2rem)!important;
 }
  .bg-artist {
-     left: -26%!important;
-     width: 700px!important;
+     left: -29%!important;
+     width: 750px!important;
      bottom: 8%!important;
  }
   .mobile-header img{

@@ -529,7 +529,7 @@ h5.myriad-font.text-uppercase, h4.myriad-font.text-uppercase, h3.myriad-font.tex
     font-size: 80px;
     font-weight: 500;
 }
-.mobile-header{
+.mobile-footer{
   display: none;
 }
 /*responsive*/
@@ -551,9 +551,6 @@ h5.myriad-font.text-uppercase, h4.myriad-font.text-uppercase, h3.myriad-font.tex
 }
 
 @media(max-width: 1024px){
-  .mobile-footer{
-      display:  none;
-  }
   .bg-artist {
     left: 8%!important;
     width: 900px!important;

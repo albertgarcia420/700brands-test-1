@@ -19,44 +19,16 @@
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <!--<a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>-->
-
-  <!-- Header -->
-
-  <header class="masthead d-flex h-100 bg-primary">
-    <div class="container text-center text-white my-auto">
-      <img src="img/phoinix-logo.png" class="mb-3 mt-5" alt="" width="auto">
+  <!--Header-->
+  <header>
+    <img src="img/phoinix-logo.png" class="header-logo img-reveal-2">
+    <div class="social-icons-header img-reveal-2">
       <ul class="list-inline mb-5">
               <li class="list-inline-item">
                <a class="social-link rounded-circle text-white" href="#!">
@@ -85,15 +57,16 @@
              </li>
            </ul>
     </div>
-    <div class="overlay"></div>
+    <img src="img/header-banner-bg.jpg" class="bg-flames" alt="">
+    <img src="img/header-banner-artist.png" class="bg-artist img-reveal-1" alt="">
   </header>
-
   <!-- About -->
   <section class="content-section bg-primary py-0" id="about">
+    <div class="shadow"></div>
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-6 mx-auto">
-          <h2 class="transparent-text text-uppercase">Videos</h2>
+          <h2 class="transparent-text mobile text-uppercase">Videos</h2>
           <h2 class="header-section text-primary text-uppercase">Videos</h2>
           <p class="lead mb-4 text-white text-uppercase">Put Information here
           </p>
@@ -130,10 +103,10 @@
           </div>
           <div class="tracks text-white">
             <div class="row mb-3">
-              <div class="col-md-4">
+              <div class="col-sm-4 mobile-track-section">
                 <img class="img-reveal" src="img/track-img.png">
               </div>
-              <div class="col-md-8 text-left my-auto">
+              <div class="col-sm-8 text-left my-auto mobile-track-section">
                 <h5 class="myriad-font text-uppercase">
                   Title of the Song
                 </h5>
@@ -225,7 +198,7 @@
 
   <!-- Callout -->
   <section class="callout">
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center bg-white">
       <div class="row">
         <div class="col-lg-6 col-md-6 text-center my-auto">
           <h2 class="mx-auto mb-2 text-uppercase">New Merchandise</h2>
@@ -296,15 +269,16 @@
 
   <!-- Footer -->
   <footer class="footer text-center bg-primary text-white">
-    <div class="container">
+    <div class="container bg-primary">
       <div class="row">
         <div class="col-lg-6 col-md-6 text-left">
+          <div class="desktop-footer">
           <img class="img-fluid" src="img/phoinix-logo.png" alt="">
           <p class="text-muted small mb-0">2019 Phoinix Keyz. All Rights Reserved.</p>
           <!--<p class="text-muted small mb-0">2019 Phoinix Keyz. All Rights ReservedCopyright &copy; Your Website 2020</p>-->
-        </div>
-        <div class="col-lg-6 col-md-6 ">
-          <ul class="list-inline mb-5">
+          </div>
+          <div class="mobile-footer text-center">
+            <ul class="list-inline mb-5">
               <li class="list-inline-item">
                <a class="social-link rounded-circle text-white" href="#!">
                  <i class="icon-social-facebook"></i>
@@ -331,6 +305,42 @@
                 </a>
              </li>
            </ul>
+          </div>  
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="desktop-footer">
+            <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+               <a class="social-link rounded-circle text-white" href="#!">
+                 <i class="icon-social-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="#!">
+                 <i class="icon-social-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="#!">
+                  <i class="icon-social-instagram"></i>
+                </a>
+             </li>
+             <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="#!">
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a>
+             </li>
+             <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="#!">
+                  <i class="icon-social-twitter"></i>
+                </a>
+             </li>
+           </ul>
+          </div>
+          <div class="mobile-footer text-center">
+            <img class="img-fluid" src="img/phoinix-logo.png" alt="">
+            <p class="text-muted small mb-0">2019 Phoinix Keyz. All Rights Reserved.</p>
+          </div>          
         </div>         
       </div>      
     </div>
@@ -357,6 +367,8 @@
     ScrollReveal({ reset: true });
     window.sr = ScrollReveal();
     sr.reveal('.img-reveal', { delay: 250 });
+    sr.reveal('.img-reveal-1', { delay: 350 });
+    sr.reveal('.img-reveal-2', { delay: 550 });
   </script>
 
 </body>
